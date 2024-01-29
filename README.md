@@ -1,11 +1,13 @@
 Angular 17 Encrypting and Decrypting Data with Crypto-js
 
 First, let's install crypto-js in our Angular project using npm:
+
 npm install crypto-js
 npm i --save-dev @types/crypto-js
 
 
 With crypto-js installed, we can import it into our Local Service (EncrDecrService):
+
 import * as CryptoJS from 'crypto-js';
 
 Now we will add two encrypt and decrypt methods to handle encryption and decryption in our service class:
@@ -37,7 +39,7 @@ export class EncrDecrService {
 }
 
 
-Using this service in componet class,
+Using this service in component class,
 
 import { Component, inject } from '@angular/core';
 import { UserinfoComponent } from '../userinfo/userinfo.component';
